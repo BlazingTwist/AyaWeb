@@ -1,0 +1,90 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "LiberationMono";
+    src: url("/fonts/LiberationMono-Regular.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("/fonts/Nunito-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "OxygenMono";
+    src: url("/fonts/OxygenMono-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "TitilliumWeb";
+    src: url("/fonts/TitilliumWeb-Regular.ttf") format("truetype");
+}
+
+/*@formatter:off*/
+.fa-folder-full    {content: url("/icon/folder-solid.svg");             }
+.fa-folder-empty   {content: url("/icon/folder-regular.svg");           }
+.fa-folder-open    {content: url("/icon/folder-open-solid.svg");        }
+.fa-angle-down     {content: url("/icon/angle-down-solid.svg");         }
+.fa-angle-right    {content: url("/icon/angle-right-solid.svg");        }
+.fa-file           {content: url("/icon/file-solid.svg");               }
+.fa-fold-all       {content: url("/icon/fold-all.svg");                 }
+.fa-unfold-all     {content: url("/icon/unfold-all.svg");               }
+.fa-rotate-left    {content: url("/icon/rotate-left-solid.svg");        }
+.fa-rotate-right   {content: url("/icon/rotate-right-solid.svg");       }
+.fa-arrow-left     {content: url("/icon/arrow-left-solid.svg");         }
+.fa-arrow-right    {content: url("/icon/arrow-right-solid.svg");        }
+.fa-undo           {content: url("/icon/undo.svg");                     }
+.fa-redo           {content: url("/icon/redo.svg");                     }
+.fa-play           {content: url("/icon/play-solid.svg");               }
+.fa-stop           {content: url("/icon/square-solid.svg");             }
+/*@formatter:on*/
+
+.fa-sm {
+    height: 16px;
+    width: 16px;
+    color: #b0b0b0;
+
+    /* https://codepen.io/sosuke/pen/Pjoqqp */
+    filter: invert(82%) sepia(0%) saturate(56%) hue-rotate(185deg) brightness(89%) contrast(84%);
+}
+
+.fa-sm.fa-green {
+    color: #56ce54;
+    filter: invert(73%) sepia(57%) saturate(531%) hue-rotate(63deg) brightness(88%) contrast(87%);
+}
+
+.fa-sm.fa-red {
+    color: #ce5454;
+    filter: invert(45%) sepia(14%) saturate(2375%) hue-rotate(313deg) brightness(94%) contrast(94%);
+}
+
+.fa-sm.disabled {
+    color: #63606c;
+    filter: invert(39%) sepia(8%) saturate(578%) hue-rotate(214deg) brightness(93%) contrast(86%);
+}
+
+.split-rows {
+}
+
+.split-columns {
+    display: flex;
+    flex-direction: row;
+}
+
+.gutter {
+    background-color: #151515;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.gutter.gutter-vertical {
+    cursor: row-resize;
+}
+
+.gutter.gutter-horizontal {
+    cursor: col-resize;
+}

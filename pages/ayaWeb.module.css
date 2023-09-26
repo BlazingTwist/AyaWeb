@@ -1,0 +1,41 @@
+.corePanel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.coreToolbar {
+    flex-grow: 0;
+    background-color: #3d3c4f;
+    padding: 2px 4px 4px;
+    gap: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 2px solid #211931;
+}
+
+.fileEditorTextInput {
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: #34324d;
+    color: #d0d0d0;
+    resize: none;
+    outline: none;
+}
+
+.ayaConsoleViewport {
+    overflow: auto;
+}
+
+.ayaConsoleViewport > pre {
+    margin: 0;
+    padding: 4px;
+}
+
+.ayaGuiViewport {
+}

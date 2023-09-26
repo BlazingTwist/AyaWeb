@@ -1,0 +1,60 @@
+.fileExplMainDiv {
+    background-color: #3d3c4f;
+    height: 100%;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.toolbar {
+    padding: 2px 4px 4px;
+    gap: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 2px solid #211931;
+}
+
+.toolbarSeparator {
+    margin: 0 2px;
+    align-self: stretch;
+    width: 1px;
+    height: 16px;
+    background-color: #545454;
+}
+
+.fileExplDirectoryDiv,
+.fileExplFileDiv {
+    padding-left: 8px;
+    padding-top: 2px;
+}
+
+.fileExplDirectoryHeader {
+}
+
+.fileExplDirectoryHeader > :global(.fa-sm),
+.fileExplFileDiv > :global(.fa-sm) {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.folderName,
+.fileName {
+    display: inline-block;
+    font-family: TitilliumWeb, sans-serif;
+    color: #d0d0d0;
+    user-select: none;
+    font-size: 0.95em;
+    vertical-align: text-bottom;
+}
+
+.folderContentDiv {
+    margin-left: 16px;
+    display: block;
+}
+
+.selected {
+    background-color: #605275;
+}
